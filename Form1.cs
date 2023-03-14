@@ -1,7 +1,3 @@
-using System;
-using System.IO;
-using System.Windows.Forms;
-
 namespace Notes
 {
     public partial class Form1 : Form
@@ -55,24 +51,21 @@ namespace Notes
         // Delete Function
         private void DeleteGeneralButton_Click(object sender, EventArgs e)
         {
-            GeneralRichTextBox.Text = "";
+            GeneralRichTextBox.Clear();
         }
         private void DeleteGRButton_Click(object sender, EventArgs e)
         {
-            GRRichTextBox.Text = "";
+            GRRichTextBox.Clear();
         }
         private void DeleteGRButton1_Click(object sender, EventArgs e)
         {
-            GRRichTextBox1.Text = "";
+            GRRichTextBox1.Clear();
         }
         private void DeleteImportantButton_Click(object sender, EventArgs e)
         {
-            ImportantRichTextBox.Text = "";
+            ImportantRichTextBox.Clear();
         }
-        private void RichTextContextMenu(object sender, EventArgs e)
-        {
-
-        }
+        private void RichTextContextMenu(object sender, EventArgs e) { }
         private void GeneralRichTextBox_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
